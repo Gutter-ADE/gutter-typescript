@@ -1,13 +1,24 @@
 {
-  "name": "@your-scope/gutter-typescript",
+  "name": "@gutter-ade/gutter-typescript",
   "version": "0.1.0",
   "description": "Hover docs and go to definition for TypeScript and JavaScript in Gutter, through typescript-language-server.",
   "keywords": ["gutter-extension", "typescript", "javascript"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gutter-ADE/gutter-typescript.git"
+  },
+  "homepage": "https://github.com/Gutter-ADE/gutter-typescript#readme",
+  "bugs": {
+    "url": "https://github.com/Gutter-ADE/gutter-typescript/issues"
+  },
   "files": [
     "gutter-extension.json",
     "README.md",
     "server/package.json",
     "server/package-lock.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
