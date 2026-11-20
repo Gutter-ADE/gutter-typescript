@@ -32,4 +32,4 @@ Change the versions in `server/package.json`, run `npm install --package-lock-on
 
 ## Publishing
 
-`package.json` uses the placeholder scope `@your-scope`. Swap in your own, add a `repository` field pointing at this repository's remote, keep `version` the same in `package.json` and `gutter-extension.json`, check it as above, and run `npm publish --access public` from this folder.
+Published to npm as `@gutter-ade/gutter-typescript`. To release, keep `version` the same in `package.json` and `gutter-extension.json`, check it as above, confirm `npm pack --dry-run` lists only the files you mean to ship, and run `npm publish` from this folder (`publishConfig` makes it public). The `gutter-extension` keyword is what lists it in Gutter's Browse tab; add `gutter-ade` under Browse > Trusted publishers to see it without showing all publishers.
