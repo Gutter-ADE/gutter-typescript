@@ -1,0 +1,13 @@
+{
+  "name": "@your-scope/gutter-typescript",
+  "version": "0.1.0",
+  "description": "Hover docs and go to definition for TypeScript and JavaScript in Gutter, through typescript-language-server.",
+  "keywords": ["gutter-extension", "typescript", "javascript"],
+  "license": "MIT",
+  "files": [
+    "gutter-extension.json",
+    "README.md",
+    "server/package.json",
+    "server/package-lock.json"
+  ]
+}

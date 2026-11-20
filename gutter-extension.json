@@ -1,0 +1,29 @@
+{
+  "gutter": 1,
+  "id": "typescript",
+  "name": "TypeScript and JavaScript",
+  "version": "0.1.0",
+  "languages": [
+    { "id": "typescript", "extensions": ["ts", "tsx", "mts", "cts"] },
+    { "id": "javascript", "extensions": ["js", "jsx", "mjs", "cjs"] }
+  ],
+  "servers": [
+    {
+      "id": "typescript-language-server",
+      "languages": ["typescript", "javascript"],
+      "command": ["${setting:nodePath}", "${setting:serverScript}", "--stdio"],
+      "rootMarkers": ["tsconfig.json", "jsconfig.json", "package.json"],
+      "initializationOptions": {},
+      "install": [{ "npm": "server" }]
+    }
+  ],
+  "settings": [
+    { "key": "nodePath", "label": "Node.js", "type": "path", "default": "node" },
+    {
+      "key": "serverScript",
+      "label": "typescript-language-server script",
+      "type": "path",
+      "default": "${serverDir}/node_modules/typescript-language-server/lib/cli.mjs"
+    }
+  ]
+}
